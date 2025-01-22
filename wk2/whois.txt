@@ -1,0 +1,119 @@
+Domain:
+uber.com
+Registrar:
+MarkMonitor Inc.
+Registered On:
+1995-07-14
+Expires On:
+2028-07-12
+Updated On:
+2021-12-15
+Status:
+clientDeleteProhibited
+clientTransferProhibited
+clientUpdateProhibited
+Name Servers:
+dns1.p04.nsone.net
+dns2.p04.nsone.net
+dns3.p04.nsone.net
+dns4.p04.nsone.net
+edns126.ultradns.biz
+edns126.ultradns.com
+edns126.ultradns.net
+edns126.ultradns.org
+
+Domain:
+netflix.com
+Registrar:
+MarkMonitor Inc.
+Registered On:
+1997-11-11
+Expires On:
+2025-11-10
+Updated On:
+2023-10-09
+Status:
+clientDeleteProhibited
+clientTransferProhibited
+clientUpdateProhibited
+serverDeleteProhibited
+serverTransferProhibited
+serverUpdateProhibited
+Name Servers:
+ns-1372.awsdns-43.org
+ns-1984.awsdns-56.co.uk
+ns-659.awsdns-18.net
+ns-81.awsdns-10.com
+
+Domain:
+reddit.com
+Registrar:
+MarkMonitor Inc.
+Registered On:
+2005-04-29
+Expires On:
+2026-04-29
+Updated On:
+2024-03-28
+Status:
+clientDeleteProhibited
+clientTransferProhibited
+clientUpdateProhibited
+serverDeleteProhibited
+serverTransferProhibited
+serverUpdateProhibited
+Name Servers:
+ns-1029.awsdns-00.org
+ns-1887.awsdns-43.co.uk
+ns-378.awsdns-47.com
+ns-557.awsdns-05.net
+
+Domain:
+temu.com
+Registrar:
+MarkMonitor Inc.
+Registered On:
+2003-04-29
+Expires On:
+2030-04-29
+Updated On:
+2024-12-16
+Status:
+clientDeleteProhibited
+clientTransferProhibited
+clientUpdateProhibited
+serverDeleteProhibited
+serverTransferProhibited
+serverUpdateProhibited
+Name Servers:
+ns1-35.azure-dns.com
+ns2-35.azure-dns.net
+ns3-35.azure-dns.org
+ns4-35.azure-dns.info
+
+Domain:
+amazon.com
+Registrar:
+MarkMonitor Inc.
+Registered On:
+1994-11-01
+Expires On:
+2025-10-31
+Updated On:
+2024-09-29
+Status:
+clientDeleteProhibited
+clientTransferProhibited
+clientUpdateProhibited
+serverDeleteProhibited
+serverTransferProhibited
+serverUpdateProhibited
+Name Servers:
+ns1.amzndns.co.uk
+ns1.amzndns.com
+ns1.amzndns.net
+ns1.amzndns.org
+ns2.amzndns.co.uk
+ns2.amzndns.com
+ns2.amzndns.net
+ns2.amzndns.org

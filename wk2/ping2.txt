@@ -1,0 +1,12 @@
+$ ping 138.197.166.192 -w 5
+
+Pinging 138.197.166.192 with 32 bytes of data:
+Reply from 138.197.166.192: bytes=32 time=8ms TTL=52
+Reply from 138.197.166.192: bytes=32 time=6ms TTL=52
+Reply from 138.197.166.192: bytes=32 time=6ms TTL=52
+Reply from 138.197.166.192: bytes=32 time=6ms TTL=52
+
+Ping statistics for 138.197.166.192:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 6ms, Maximum = 8ms, Average = 6ms

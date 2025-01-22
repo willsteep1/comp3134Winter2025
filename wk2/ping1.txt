@@ -1,0 +1,5 @@
+root@comp3134-lamp-ubuntu-101435500:~# ping 198.96.86.176 -w 5
+PING 198.96.86.176 (198.96.86.176) 56(84) bytes of data.
+
+--- 198.96.86.176 ping statistics ---
+5 packets transmitted, 0 received, 100% packet loss, time 4094ms

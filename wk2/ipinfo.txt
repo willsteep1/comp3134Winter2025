@@ -1,0 +1,59 @@
+Question
+dig @1.0.0.1 georgebrown.ca. A
+Answer
+georgebrown.ca.	600	A	198.96.86.176
+
+The George Brown College of Applied Arts and Technology
+Location	Toronto, Ontario, Canada
+AS	AS53566
+AS name	The George Brown College of Applied Arts and Technology
+
+
+Question
+dig @1.0.0.1 twitch.tv. A
+
+Answer
+twitch.tv.	3498	A	151.101.2.167
+
+Fastly, Inc.
+Location	San Francisco, California, United States of America
+AS	AS54113
+AS name	Fastly, Inc.
+
+
+
+Question
+dig @1.0.0.1 github.com. A
+
+Answer
+github.com.	43	A	140.82.116.3
+
+GitHub, Inc.
+Location	Seattle, Washington, United States of America
+AS	AS36459
+AS name	GitHub, Inc.
+
+
+Question
+dig @1.1.1.1 steampowered.com. A
+
+Answer
+steampowered.com.	20	A	104.89.226.113
+
+Akamai Technologies, Inc.
+Location	Santa Clara, California, United States of America
+AS	AS16625
+AS name	Akamai Technologies, Inc.
+
+
+
+Question
+dig @1.0.0.1 youtube.com. A
+
+Answer
+youtube.com.	45	A	142.251.46.238
+
+Google LLC
+Location	San Jose, California, United States of America
+AS	AS15169
+AS name	Google LLC
