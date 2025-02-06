@@ -1,0 +1,11 @@
+root@comp3134-lamp-ubuntu-101435500:~# tcpdump -c 5 -i eth0
+tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
+listening on eth0, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+18:29:45.045891 IP comp3134-lamp-ubuntu-101435500.ssh > 162.243.188.66.24926: Flags [P.], seq 1703418550:1703418678, ack 3948411895, win 501, options [nop,nop,TS val 39560649 ecr 1622806988], length 128
+18:29:45.045978 IP comp3134-lamp-ubuntu-101435500.ssh > 162.243.188.66.24926: Flags [P.], seq 128:192, ack 1, win 501, options [nop,nop,TS val 39560649 ecr 1622806988], length 64
+18:29:45.045995 IP comp3134-lamp-ubuntu-101435500.ssh > 162.243.188.66.24926: Flags [P.], seq 192:272, ack 1, win 501, options [nop,nop,TS val 39560649 ecr 1622806988], length 80
+18:29:45.046040 IP comp3134-lamp-ubuntu-101435500.ssh > 162.243.188.66.24926: Flags [P.], seq 272:352, ack 1, win 501, options [nop,nop,TS val 39560649 ecr 1622806988], length 80
+18:29:45.046081 IP comp3134-lamp-ubuntu-101435500.ssh > 162.243.188.66.24926: Flags [P.], seq 352:432, ack 1, win 501, options [nop,nop,TS val 39560649 ecr 1622806988], length 80
+5 packets captured
+38 packets received by filter
+0 packets dropped by kernel

@@ -1,0 +1,90 @@
+root@comp3134-lamp-ubuntu-101435500:~# tcpdump -i eth0
+
+tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
+listening on eth0, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+18:28:20.941003 IP comp3134-lamp-ubuntu-101435500.ssh > 162.243.188.66.24926: Flags [P.], seq 1703403062:1703403190, ack 3948410295, win 501, options [nop,nop,TS val 39476544 ecr 1622722886], length 128
+18:28:20.941075 IP comp3134-lamp-ubuntu-101435500.ssh > 162.243.188.66.24926: Flags [P.], seq 128:272, ack 1, win 501, options [nop,nop,TS val 39476544 ecr 1622722886], length 144
+18:28:20.941159 IP comp3134-lamp-ubuntu-101435500.ssh > 162.243.188.66.24926: Flags [P.], seq 272:496, ack 1, win 501, options [nop,nop,TS val 39476545 ecr 1622722886], length 224
+18:28:20.951670 IP 162.243.188.66.24926 > comp3134-lamp-ubuntu-101435500.ssh: Flags [.], ack 0, win 501, options [nop,nop,TS val 1622722904 ecr 39476540], length 0
+18:28:20.956207 IP 162.243.188.66.24926 > comp3134-lamp-ubuntu-101435500.ssh: Flags [.], ack 128, win 501, options [nop,nop,TS val 1622722909 ecr 39476544], length 0
+18:28:20.956208 IP 162.243.188.66.24926 > comp3134-lamp-ubuntu-101435500.ssh: Flags [.], ack 272, win 501, options [nop,nop,TS val 1622722909 ecr 39476544], length 0
+18:28:20.956271 IP 162.243.188.66.24926 > comp3134-lamp-ubuntu-101435500.ssh: Flags [.], ack 496, win 501, options [nop,nop,TS val 1622722909 ecr 39476545], length 0
+18:28:20.969002 IP 83.229.124.127.56982 > comp3134-lamp-ubuntu-101435500.ssh: Flags [F.], seq 4281089298, ack 3544254546, win 501, options [nop,nop,TS val 3637606711 ecr 3634506316], length 0
+18:28:20.970501 IP comp3134-lamp-ubuntu-101435500.ssh > 83.229.124.127.56982: Flags [F.], seq 1, ack 1, win 502, options [nop,nop,TS val 3634506507 ecr 3637606711], length 0
+18:28:21.040984 IP comp3134-lamp-ubuntu-101435500.55782 > 67.207.67.3.domain: 39523+ [1au] PTR? 66.188.243.162.in-addr.arpa. (56)
+18:28:21.041083 IP comp3134-lamp-ubuntu-101435500.41106 > 67.207.67.3.domain: 57727+ [1au] PTR? 66.188.243.162.in-addr.arpa. (56)
+18:28:21.041124 IP comp3134-lamp-ubuntu-101435500.33092 > 67.207.67.2.domain: Flags [S], seq 427113439, win 64240, options [mss 1460,sackOK,TS val 3554142533 ecr 0,nop,wscale 7,tfo  cookiereq,nop,nop], length 0
+18:28:21.043413 IP 67.207.67.2.domain > comp3134-lamp-ubuntu-101435500.33092: Flags [S.], seq 1128186155, ack 427113440, win 65160, options [mss 1460,sackOK,TS val 3850406231 ecr 3554142533,nop,wscale 9], length 0
+18:28:21.043468 IP comp3134-lamp-ubuntu-101435500.33092 > 67.207.67.2.domain: Flags [.], ack 1, win 502, options [nop,nop,TS val 3554142535 ecr 3850406231], length 0
+18:28:21.043524 IP comp3134-lamp-ubuntu-101435500.33092 > 67.207.67.2.domain: Flags [P.], seq 1:48, ack 1, win 502, options [nop,nop,TS val 3554142535 ecr 3850406231], length 47 50565+ PTR? 66.188.243.162.in-addr.arpa. (45)
+18:28:21.043637 IP 67.207.67.3.domain > comp3134-lamp-ubuntu-101435500.41106: 57727 NXDomain 0/1/1 (123)
+18:28:21.043637 IP 67.207.67.3.domain > comp3134-lamp-ubuntu-101435500.55782: 39523 NXDomain 0/1/1 (123)
+18:28:21.043741 IP comp3134-lamp-ubuntu-101435500.41106 > 67.207.67.3.domain: 57727+ PTR? 66.188.243.162.in-addr.arpa. (45)
+18:28:21.043860 IP comp3134-lamp-ubuntu-101435500.55782 > 67.207.67.3.domain: 39523+ PTR? 66.188.243.162.in-addr.arpa. (45)
+18:28:21.044571 IP 67.207.67.2.domain > comp3134-lamp-ubuntu-101435500.33092: Flags [.], ack 48, win 128, options [nop,nop,TS val 3850406233 ecr 3554142535], length 0
+18:28:21.044933 IP 67.207.67.3.domain > comp3134-lamp-ubuntu-101435500.41106: 57727 NXDomain 0/1/0 (112)
+18:28:21.078278 IP 67.207.67.2.domain > comp3134-lamp-ubuntu-101435500.33092: Flags [P.], seq 1:115, ack 48, win 128, options [nop,nop,TS val 3850406267 ecr 3554142535], length 114 50565 NXDomain 0/1/0 (112)
+18:28:21.078331 IP comp3134-lamp-ubuntu-101435500.33092 > 67.207.67.2.domain: Flags [.], ack 115, win 502, options [nop,nop,TS val 3554142570 ecr 3850406267], length 0
+18:28:21.156719 IP 67.207.67.3.domain > comp3134-lamp-ubuntu-101435500.55782: 39523 NXDomain 0/1/0 (112)
+18:28:21.157486 IP comp3134-lamp-ubuntu-101435500.38823 > 67.207.67.3.domain: 52891+ [1au] PTR? 192.166.197.138.in-addr.arpa. (57)
+18:28:21.158867 IP 67.207.67.3.domain > comp3134-lamp-ubuntu-101435500.38823: 52891 NXDomain 0/1/1 (124)
+18:28:21.159078 IP 83.229.124.127.56982 > comp3134-lamp-ubuntu-101435500.ssh: Flags [.], ack 2, win 501, options [nop,nop,TS val 3637606901 ecr 3634506507], length 0
+18:28:21.159217 IP comp3134-lamp-ubuntu-101435500.38823 > 67.207.67.3.domain: 52891+ PTR? 192.166.197.138.in-addr.arpa. (46)
+18:28:21.160357 IP 67.207.67.3.domain > comp3134-lamp-ubuntu-101435500.38823: 52891 NXDomain 0/1/0 (113)
+18:28:21.161079 IP comp3134-lamp-ubuntu-101435500.ssh > 162.243.188.66.24926: Flags [P.], seq 496:1792, ack 1, win 501, options [nop,nop,TS val 39476764 ecr 1622722909], length 1296
+18:28:21.161322 IP comp3134-lamp-ubuntu-101435500.33511 > 67.207.67.3.domain: 23928+ [1au] PTR? 127.124.229.83.in-addr.arpa. (56)
+18:28:21.161412 IP comp3134-lamp-ubuntu-101435500.52810 > 67.207.67.3.domain: 55912+ [1au] PTR? 127.124.229.83.in-addr.arpa. (56)
+18:28:21.161441 IP comp3134-lamp-ubuntu-101435500.33092 > 67.207.67.2.domain: Flags [P.], seq 48:95, ack 115, win 502, options [nop,nop,TS val 3554142653 ecr 3850406267], length 47 30951+ PTR? 127.124.229.83.in-addr.arpa. (45)
+18:28:21.162444 IP 67.207.67.3.domain > comp3134-lamp-ubuntu-101435500.33511: 23928 NXDomain 0/1/1 (116)
+18:28:21.162444 IP 67.207.67.3.domain > comp3134-lamp-ubuntu-101435500.52810: 55912 NXDomain 0/1/1 (116)
+18:28:21.162565 IP 67.207.67.2.domain > comp3134-lamp-ubuntu-101435500.33092: Flags [P.], seq 115:222, ack 95, win 128, options [nop,nop,TS val 3850406351 ecr 3554142653], length 107 30951 NXDomain 0/1/0 (105)
+18:28:21.162589 IP comp3134-lamp-ubuntu-101435500.33092 > 67.207.67.2.domain: Flags [.], ack 222, win 502, options [nop,nop,TS val 3554142654 ecr 3850406351], length 0
+18:28:21.162638 IP comp3134-lamp-ubuntu-101435500.33511 > 67.207.67.3.domain: 23928+ PTR? 127.124.229.83.in-addr.arpa. (45)
+18:28:21.162686 IP comp3134-lamp-ubuntu-101435500.52810 > 67.207.67.3.domain: 55912+ PTR? 127.124.229.83.in-addr.arpa. (45)
+18:28:21.163759 IP 67.207.67.3.domain > comp3134-lamp-ubuntu-101435500.33511: 23928 NXDomain 0/1/0 (105)
+18:28:21.163796 IP 67.207.67.3.domain > comp3134-lamp-ubuntu-101435500.52810: 55912 NXDomain 0/1/0 (105)
+18:28:21.164425 IP comp3134-lamp-ubuntu-101435500.ssh > 162.243.188.66.24926: Flags [P.], seq 1792:2224, ack 1, win 501, options [nop,nop,TS val 39476768 ecr 1622722909], length 432
+18:28:21.164667 IP comp3134-lamp-ubuntu-101435500.32960 > 67.207.67.3.domain: 7163+ [1au] PTR? 3.67.207.67.in-addr.arpa. (53)
+18:28:21.164762 IP comp3134-lamp-ubuntu-101435500.35815 > 67.207.67.3.domain: 50650+ [1au] PTR? 3.67.207.67.in-addr.arpa. (53)
+18:28:21.164792 IP comp3134-lamp-ubuntu-101435500.33092 > 67.207.67.2.domain: Flags [P.], seq 95:139, ack 222, win 502, options [nop,nop,TS val 3554142656 ecr 3850406351], length 44 14704+ PTR? 3.67.207.67.in-addr.arpa. (42)
+18:28:21.165851 IP 67.207.67.3.domain > comp3134-lamp-ubuntu-101435500.32960: 7163 NXDomain 0/1/1 (120)
+18:28:21.165880 IP 67.207.67.3.domain > comp3134-lamp-ubuntu-101435500.35815: 50650 NXDomain 0/1/1 (120)
+18:28:21.165989 IP comp3134-lamp-ubuntu-101435500.32960 > 67.207.67.3.domain: 7163+ PTR? 3.67.207.67.in-addr.arpa. (42)
+18:28:21.166004 IP 67.207.67.2.domain > comp3134-lamp-ubuntu-101435500.33092: Flags [P.], seq 222:333, ack 139, win 128, options [nop,nop,TS val 3850406355 ecr 3554142656], length 111 14704 NXDomain 0/1/0 (109)
+18:28:21.166047 IP comp3134-lamp-ubuntu-101435500.35815 > 67.207.67.3.domain: 50650+ PTR? 3.67.207.67.in-addr.arpa. (42)
+18:28:21.167131 IP 67.207.67.3.domain > comp3134-lamp-ubuntu-101435500.32960: 7163 NXDomain 0/1/0 (109)
+18:28:21.167232 IP 67.207.67.3.domain > comp3134-lamp-ubuntu-101435500.35815: 50650 NXDomain 0/1/0 (109)
+18:28:21.167784 IP comp3134-lamp-ubuntu-101435500.ssh > 162.243.188.66.24926: Flags [P.], seq 2224:2544, ack 1, win 501, options [nop,nop,TS val 39476771 ecr 1622722909], length 320
+18:28:21.168007 IP comp3134-lamp-ubuntu-101435500.37707 > 67.207.67.3.domain: 62079+ [1au] PTR? 2.67.207.67.in-addr.arpa. (53)
+18:28:21.168077 IP comp3134-lamp-ubuntu-101435500.46003 > 67.207.67.3.domain: 4629+ [1au] PTR? 2.67.207.67.in-addr.arpa. (53)
+18:28:21.168101 IP comp3134-lamp-ubuntu-101435500.33092 > 67.207.67.2.domain: Flags [P.], seq 139:183, ack 333, win 502, options [nop,nop,TS val 3554142659 ecr 3850406355], length 44 26573+ PTR? 2.67.207.67.in-addr.arpa. (42)
+18:28:21.169201 IP 67.207.67.3.domain > comp3134-lamp-ubuntu-101435500.37707: 62079 NXDomain 0/1/1 (120)
+18:28:21.169201 IP 67.207.67.3.domain > comp3134-lamp-ubuntu-101435500.46003: 4629 NXDomain 0/1/1 (120)
+18:28:21.169354 IP comp3134-lamp-ubuntu-101435500.37707 > 67.207.67.3.domain: 62079+ PTR? 2.67.207.67.in-addr.arpa. (42)
+18:28:21.169403 IP comp3134-lamp-ubuntu-101435500.46003 > 67.207.67.3.domain: 4629+ PTR? 2.67.207.67.in-addr.arpa. (42)
+18:28:21.169675 IP 67.207.67.2.domain > comp3134-lamp-ubuntu-101435500.33092: Flags [P.], seq 333:444, ack 183, win 128, options [nop,nop,TS val 3850406358 ecr 3554142659], length 111 26573 NXDomain 0/1/0 (109)
+18:28:21.170368 IP 67.207.67.3.domain > comp3134-lamp-ubuntu-101435500.37707: 62079 NXDomain 0/1/0 (109)
+18:28:21.170369 IP 67.207.67.3.domain > comp3134-lamp-ubuntu-101435500.46003: 4629 NXDomain 0/1/0 (109)
+18:28:21.171217 IP comp3134-lamp-ubuntu-101435500.ssh > 162.243.188.66.24926: Flags [P.], seq 2544:4528, ack 1, win 501, options [nop,nop,TS val 39476775 ecr 1622722909], length 1984
+18:28:21.176389 IP 162.243.188.66.24926 > comp3134-lamp-ubuntu-101435500.ssh: Flags [.], ack 1792, win 501, options [nop,nop,TS val 1622723129 ecr 39476764], length 0
+18:28:21.179612 IP 162.243.188.66.24926 > comp3134-lamp-ubuntu-101435500.ssh: Flags [.], ack 2224, win 498, options [nop,nop,TS val 1622723132 ecr 39476768], length 0
+18:28:21.183704 IP 162.243.188.66.24926 > comp3134-lamp-ubuntu-101435500.ssh: Flags [.], ack 2544, win 496, options [nop,nop,TS val 1622723136 ecr 39476771], length 0
+18:28:21.186430 IP 162.243.188.66.24926 > comp3134-lamp-ubuntu-101435500.ssh: Flags [.], ack 4528, win 481, options [nop,nop,TS val 1622723139 ecr 39476775], length 0
+18:28:21.212203 IP comp3134-lamp-ubuntu-101435500.33092 > 67.207.67.2.domain: Flags [.], ack 444, win 502, options [nop,nop,TS val 3554142704 ecr 3850406358], length 0
+18:28:21.249117 IP comp3134-lamp-ubuntu-101435500.ssh > 162.243.188.66.24926: Flags [P.], seq 4528:7424, ack 1, win 501, options [nop,nop,TS val 39476852 ecr 1622723139], length 2896
+18:28:21.249149 IP comp3134-lamp-ubuntu-101435500.ssh > 162.243.188.66.24926: Flags [P.], seq 7424:8688, ack 1, win 501, options [nop,nop,TS val 39476852 ecr 1622723139], length 1264
+18:28:21.249267 IP comp3134-lamp-ubuntu-101435500.ssh > 162.243.188.66.24926: Flags [P.], seq 8688:11232, ack 1, win 501, options [nop,nop,TS val 39476853 ecr 1622723139], length 2544
+18:28:21.264411 IP 162.243.188.66.24926 > comp3134-lamp-ubuntu-101435500.ssh: Flags [.], ack 5976, win 501, options [nop,nop,TS val 1622723217 ecr 39476852], length 0
+18:28:21.264411 IP 162.243.188.66.24926 > comp3134-lamp-ubuntu-101435500.ssh: Flags [.], ack 7424, win 495, options [nop,nop,TS val 1622723217 ecr 39476852], length 0
+18:28:21.264411 IP 162.243.188.66.24926 > comp3134-lamp-ubuntu-101435500.ssh: Flags [.], ack 8688, win 487, options [nop,nop,TS val 1622723217 ecr 39476852], length 0
+18:28:21.264411 IP 162.243.188.66.24926 > comp3134-lamp-ubuntu-101435500.ssh: Flags [.], ack 11232, win 471, options [nop,nop,TS val 1622723217 ecr 39476853], length 0
+18:28:21.352472 IP comp3134-lamp-ubuntu-101435500.ssh > 162.243.188.66.24926: Flags [P.], seq 11232:12512, ack 1, win 501, options [nop,nop,TS val 39476956 ecr 1622723217], length 1280
+18:28:21.368235 IP 162.243.188.66.24926 > comp3134-lamp-ubuntu-101435500.ssh: Flags [.], ack 12512, win 501, options [nop,nop,TS val 1622723321 ecr 39476956], length 0
+18:28:21.456438 IP comp3134-lamp-ubuntu-101435500.ssh > 162.243.188.66.24926: Flags [P.], seq 12512:12928, ack 1, win 501, options [nop,nop,TS val 39477060 ecr 1622723321], length 416
+18:28:21.471798 IP 162.243.188.66.24926 > comp3134-lamp-ubuntu-101435500.ssh: Flags [.], ack 12928, win 501, options [nop,nop,TS val 1622723424 ecr 39477060], length 0
+^C
+18:28:21.513952 IP 49.7.154.4.43382 > comp3134-lamp-ubuntu-101435500.ssh: Flags [S], seq 2231565142, win 64240, options [mss 1460,sackOK,TS val 315298193 ecr 0,nop,wscale 7], length 0
+
+81 packets captured
+165 packets received by filter
+45 packets dropped by kernel

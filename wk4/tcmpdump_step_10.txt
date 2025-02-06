@@ -1,0 +1,26 @@
+root@comp3134-lamp-ubuntu-101435500:~# tcpdump -c 20 -i eth0 port 22
+tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
+listening on eth0, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+18:38:51.937449 IP comp3134-lamp-ubuntu-101435500.ssh > 162.243.188.66.24926: Flags [P.], seq 1706545782:1706545846, ack 3948427591, win 501, options [nop,nop,TS val 40107541 ecr 1623353884], length 64
+18:38:51.939951 IP comp3134-lamp-ubuntu-101435500.ssh > 162.243.188.66.24926: Flags [P.], seq 64:192, ack 1, win 501, options [nop,nop,TS val 40107543 ecr 1623353884], length 128
+18:38:51.940015 IP comp3134-lamp-ubuntu-101435500.ssh > 162.243.188.66.24926: Flags [P.], seq 192:256, ack 1, win 501, options [nop,nop,TS val 40107543 ecr 1623353884], length 64
+18:38:51.940039 IP comp3134-lamp-ubuntu-101435500.ssh > 162.243.188.66.24926: Flags [P.], seq 256:336, ack 1, win 501, options [nop,nop,TS val 40107543 ecr 1623353884], length 80
+18:38:51.940069 IP comp3134-lamp-ubuntu-101435500.ssh > 162.243.188.66.24926: Flags [P.], seq 336:416, ack 1, win 501, options [nop,nop,TS val 40107543 ecr 1623353884], length 80
+18:38:51.940099 IP comp3134-lamp-ubuntu-101435500.ssh > 162.243.188.66.24926: Flags [P.], seq 416:496, ack 1, win 501, options [nop,nop,TS val 40107543 ecr 1623353884], length 80
+18:38:51.940156 IP comp3134-lamp-ubuntu-101435500.ssh > 162.243.188.66.24926: Flags [P.], seq 496:560, ack 1, win 501, options [nop,nop,TS val 40107544 ecr 1623353884], length 64
+18:38:51.952542 IP 162.243.188.66.24926 > comp3134-lamp-ubuntu-101435500.ssh: Flags [.], ack 64, win 1015, options [nop,nop,TS val 1623353905 ecr 40107541], length 0
+18:38:51.955116 IP 162.243.188.66.24926 > comp3134-lamp-ubuntu-101435500.ssh: Flags [.], ack 192, win 1015, options [nop,nop,TS val 1623353907 ecr 40107543], length 0
+18:38:51.955116 IP 162.243.188.66.24926 > comp3134-lamp-ubuntu-101435500.ssh: Flags [.], ack 256, win 1015, options [nop,nop,TS val 1623353907 ecr 40107543], length 0
+18:38:51.955211 IP 162.243.188.66.24926 > comp3134-lamp-ubuntu-101435500.ssh: Flags [.], ack 336, win 1015, options [nop,nop,TS val 1623353907 ecr 40107543], length 0
+18:38:51.955211 IP 162.243.188.66.24926 > comp3134-lamp-ubuntu-101435500.ssh: Flags [.], ack 416, win 1015, options [nop,nop,TS val 1623353907 ecr 40107543], length 0
+18:38:51.955211 IP 162.243.188.66.24926 > comp3134-lamp-ubuntu-101435500.ssh: Flags [.], ack 496, win 1015, options [nop,nop,TS val 1623353907 ecr 40107543], length 0
+18:38:51.955359 IP 162.243.188.66.24926 > comp3134-lamp-ubuntu-101435500.ssh: Flags [.], ack 560, win 1015, options [nop,nop,TS val 1623353907 ecr 40107544], length 0
+18:38:52.044437 IP comp3134-lamp-ubuntu-101435500.ssh > 162.243.188.66.24926: Flags [P.], seq 560:816, ack 1, win 501, options [nop,nop,TS val 40107648 ecr 1623353907], length 256
+18:38:52.044542 IP comp3134-lamp-ubuntu-101435500.ssh > 162.243.188.66.24926: Flags [P.], seq 816:880, ack 1, win 501, options [nop,nop,TS val 40107648 ecr 1623353907], length 64
+18:38:52.044565 IP comp3134-lamp-ubuntu-101435500.ssh > 162.243.188.66.24926: Flags [P.], seq 880:1120, ack 1, win 501, options [nop,nop,TS val 40107648 ecr 1623353907], length 240
+18:38:52.044592 IP comp3134-lamp-ubuntu-101435500.ssh > 162.243.188.66.24926: Flags [P.], seq 1120:1184, ack 1, win 501, options [nop,nop,TS val 40107648 ecr 1623353907], length 64
+18:38:52.044646 IP comp3134-lamp-ubuntu-101435500.ssh > 162.243.188.66.24926: Flags [P.], seq 1184:1424, ack 1, win 501, options [nop,nop,TS val 40107648 ecr 1623353907], length 240
+18:38:52.044685 IP comp3134-lamp-ubuntu-101435500.ssh > 162.243.188.66.24926: Flags [P.], seq 1424:1488, ack 1, win 501, options [nop,nop,TS val 40107648 ecr 1623353907], length 64
+20 packets captured
+51 packets received by filter
+0 packets dropped by kernel
