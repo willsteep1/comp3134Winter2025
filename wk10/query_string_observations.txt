@@ -1,0 +1,12 @@
+When I type a valid english word into the form, it appends the word to the URL.
+
+When I type append a valid english word in the URL, it navigates to the page for that word as if I entered it into the form.
+
+When I type an invalid English word it declares that it can't find the word I was looking for. The result is the same whether typed in the form or appended in the URL.
+
+
+when I type <script>alert(%27hello%27)</script> into the form, it says that it can't find results for <script>alert('hello')</script>. This is interesting because it seems to be interpreting %27 as a ' character.
+
+
+However, when I append this to the URL, it brings me to a new error page that simply says they can't find the page I'm looking for. 
+

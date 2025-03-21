@@ -1,0 +1,3 @@
+The first solution removes HTML tags which leaves only plain text. This is done through strip_tags
+
+The other solution is done through htmlspecialchars which converts < and > characters to &lt and &gt respectively. This means that the closing tags will not get executed.
