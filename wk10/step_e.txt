@@ -1,0 +1,4 @@
+I will perform a security check by validating the input. If a . is found in the request then it will block the request, thus preventing directory traversal and file access.
+
+I will also deny access if the directory they are trying to access is outside the base path that has been defined OR if the target path does not exist
+

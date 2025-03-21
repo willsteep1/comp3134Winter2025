@@ -1,0 +1,3 @@
+In a normal html file, the comments are visible in the developer console in browser.
+
+By using a php file instead and commenting with php comments, the browser will not be able to see them.

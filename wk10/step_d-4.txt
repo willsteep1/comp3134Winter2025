@@ -1,0 +1,3 @@
+the output is an array of directories
+
+the sensitive info revealed is the system directory file structure. 

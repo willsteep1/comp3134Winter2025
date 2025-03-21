@@ -1,0 +1,3 @@
+Typing in ?q=hello results in a page that displays a warning of 'scandir(hello): failed to open directory: No such file or directory in /var/www/html/directory_traversal_part1.php on line 17'
+
+The sensitive information given by this page is the absolute file path of my web root ( var/www/html ) and also confirms the script's location.

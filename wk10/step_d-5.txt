@@ -1,0 +1,3 @@
+The output seems to be an array that reveals the html directory
+
+The sensitive info is the html folder which in theory would hold the website files. It could be extremely bad if a bad actor knew how to access this folder. 
