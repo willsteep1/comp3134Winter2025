@@ -1,0 +1,8 @@
+Test Observations:
+
+1. When submitting from csfr_form.php with the correct CSRF token, the login succeeds if the credentials are correct.
+2. When submitting from csfr.html, the login fails with "CSRF validation failed" since the token is missing.
+3. This proves the CSRF protection works by checking if the token matches the one stored in the session.
+
+Conclusion:
+Using session-based CSRF tokens mitigates unauthorized form submissions from external pages.

