@@ -1,0 +1,45 @@
+SQL Injection Testing Summary
+-----------------------------
+
+1) Input: Ben
+
+Observation:
+The query returned no results because there is a user named Ben in the database, but their "active" column is set to 0. Since the SQL query filters using `active = 1`, the row is excluded from the result set.
+
+Explanation:
+The form builds a query like:
+SELECT * FROM users WHERE firstname = 'Ben' AND active = 1;
+Ben exists, but does not meet the active=1 condition, so nothing is returned. This is expected behavior.
+
+---
+
+2) Input: Ben'-- 
+
+Observation:
+The query returned a match for the user "Ben" even though they are marked as inactive (active = 0).
+
+Explanation:
+This is a SQL injection. The input closes the quote after 'Ben', and the `--` comment syntax ignores the rest of the query. The resulting SQL becomes:
+SELECT * FROM users WHERE firstname = 'Ben'--' AND active = 1;
+The `--` tells the SQL engine to treat the rest as a comment, so `AND active = 1` is ignored.
+
+As a result, the inactive user named Ben is returned even though they shouldn't be.
+
+
+----
+
+3) Input: Ben' or 1=1
+
+Observation:
+The form returns all users that are active, not just users named "Ben". Even users with different first names (e.g., John, Alice, Bruce) are shown.
+
+Explanation:
+ Here's what the query becomes:
+SELECT * FROM users WHERE firstname = 'Ben' or 1=1 AND active = 1;
+
+Due to the use of `or 1=1`, the condition always evaluates to true — so the database ignores the firstname = 'Ben' part. Any row where active = 1 will be shown, regardless of name.
+
+This bypasses the intended filtering logic and exposes all active users.
+
+Conclusion:
+This confirms the `getusers_1.php` page is highly vulnerable to SQL injection.
